@@ -43,7 +43,7 @@ Visualization Manager:
       Draw Behind: false
       Enabled: true
       Name: AerialMapDisplay
-      Object URI: https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png
+      Object URI: https://api.mapbox.com/styles/v1/mapbox/satellite-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZWRpc29uYWx0YW1pcmFubzIwMDAiLCJhIjoiY2w2ZjZuY2pnMDJwcjNiczdsdmMyYXluaSJ9.jjLd2zK1VYg0CHUDOKcF5w
       Topic: /gps/fix
       Value: true
       Zoom: 18
@@ -88,7 +88,27 @@ Visualization Manager:
       Topic: /sdv/path
       Unreliable: false
       Value: true
-
+    - Class: rviz/Path
+      Color: 0; 255; 0
+      Enabled: true
+      Head Diameter: 0.300000012
+      Head Length: 0.200000003
+      Length: 0.300000012
+      Line Style: Lines
+      Line Width: 0.0299999993
+      Name: sdv_path1
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Pose Color: 255; 85; 255
+      Pose Style: None
+      Radius: 0.0299999993
+      Shaft Diameter: 0.100000001
+      Shaft Length: 0.100000001
+      Topic: /sdv/path1
+      Unreliable: false
+      Value: true
  
   Enabled: true
   Global Options:
